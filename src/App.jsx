@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/Home';  // Import halaman Home
-import Visi from './pages/Visi';  // Import halaman Visi
+import Home from './pages/home';  // Import halaman Home
+import Visi from './pages/visi';  // Import halaman Visi
 
 function App() {
   return (
