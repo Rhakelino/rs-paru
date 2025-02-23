@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from './pages/home';  // Import halaman Home
-import Visi from './pages/visi';  // Import halaman Visi
-
+import Home from "./pages/Home";  // Pastikan file ini ada di /src/pages/Home.jsx
+import Visi from "./pages/Visi";  // Pastikan file ini ada di /src/pages/Visi.jsx
 function App() {
   return (
     <Router>
