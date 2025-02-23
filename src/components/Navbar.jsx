@@ -59,7 +59,7 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             {/* Profil Dropdown Menu Items */}
             {activeDropdown === "profil" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48">
-                <Link to="/Visi" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visi dan Misi</Link>
+                <Link to="/visi" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visi dan Misi</Link>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas dan Pokok Fungsi</a>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</a>
                 <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sambutan Kepala</a>

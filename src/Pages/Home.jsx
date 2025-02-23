@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import NewsCard from "../components/NewsCard";
 import Footer from "../components/Footer";
 
-const Home = () => {
+const home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
   const [activeDropdown, setActiveDropdown] = useState(null); // Track the active dropdown
 
@@ -92,4 +92,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default home;
