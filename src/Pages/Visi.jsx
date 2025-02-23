@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-function visi() {
+function Visi() {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
     const [activeDropdown, setActiveDropdown] = useState(null); // Track the active dropdown
 
@@ -90,4 +90,4 @@ function visi() {
     );
 }
 
-export default visi;
+export default Visi;
