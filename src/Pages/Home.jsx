@@ -68,7 +68,7 @@ const Home = () => {
       {/* Berita */}
       <div className="mb-10">  {/* Tambahkan margin atau padding setelah navbar */}
         <div className="container mx-auto px-6 pt-6 text-center">
-          <h2 className="text-3xl font-bold text-blue-500">Berita Terbaru</h2>
+          <h2 className="text-3xl font-bold opacity-60">Berita Terbaru</h2>
         </div>
         {/* News Grid */}
         <div className="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 h-full gap-8 mt-12">

@@ -6,7 +6,7 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 450) {
+      if (window.scrollY > 50) {
         setIsScrolled(true); // Navbar akan diberi background dan shadow saat scroll
       } else {
         setIsScrolled(false); // Navbar kembali normal ketika scroll di atas
@@ -24,10 +24,10 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
       {/* Navbar Content */}
       <div className={`flex justify-between items-center p-4 relative z-20`}>
         {/* Logo Section */}
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src="./images/logo.png" alt="Logo" className="w-10" />
           <div className="text-2xl font-bold text-blue-500">Rs Paru</div>
-        </div>
+        </Link>
 
         {/* Mobile Hamburger Button */}
         <div className="block lg:hidden ml-auto z-30">
@@ -60,13 +60,8 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             {activeDropdown === "profil" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48">
                 <Link to="/visi" href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visi dan Misi</Link>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas dan Pokok Fungsi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sambutan Kepala</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Struktur Organisasi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dokter</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tenaga Keperawatan</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Penunjang Medis</a>
+                <Link to="/tugas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas dan Pokok Fungsi</Link>
+                <Link to="/sejarah" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</Link>
               </div>
             )}
           </div>
@@ -88,9 +83,9 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             {/* Pelayanan Medis Dropdown Menu Items */}
             {activeDropdown === "pelayananMedis" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48">
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Instalasi Gawat Darurat</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Jalan</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Inap</a>
+                <Link to="/igd" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Instalasi Gawat Darurat</Link>
+                <Link to="/rawat" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Jalan</Link>
+                <Link to="/inap" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Inap</Link>
               </div>
             )}
           </div>
@@ -150,8 +145,8 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             {activeDropdown === "profil" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48 z-40">
                 <Link to="/Visi" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Visi dan Misi</Link>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas dan Pokok Fungsi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</a>
+                <Link to="/tugas" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tugas dan Pokok Fungsi</Link>
+                <Link to="/sejarah" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sejarah</Link>
               </div>
             )}
           </div>
@@ -171,9 +166,9 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             </button>
             {activeDropdown === "pelayananMedis" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48 z-40">
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Instalasi Gawat Darurat</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Jalan</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Inap</a>
+                <Link to="/igd" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Instalasi Gawat Darurat</Link>
+                <Link to="/rawat" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Jalan</Link>
+                <Link to="/inap" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Rawat Inap</Link>
               </div>
             )}
           </div>

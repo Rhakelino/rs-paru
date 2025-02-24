@@ -61,7 +61,7 @@ function Visi() {
                             <li>Mengembangkan Teknologi Kesehatan khususnya dalam Penanganan Penyakit Paru dan Saluran Pernafasan.</li>
                         </ol></p>
                     </div>
-                    <div className="relative justify-end flex">
+                    <div className="relative hidden justify-end md:flex">
                         <img src="./images/misi.jpg" alt="Chronic Disease Management" />
                     </div>
                 </div>
