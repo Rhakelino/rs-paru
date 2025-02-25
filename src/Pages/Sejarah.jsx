@@ -37,9 +37,9 @@ const Sejarah = () => {
             {/* Content Section */}
             <div className="container mx-auto md:px-20 px-10 py-16 mt-10">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">SEJARAH</h1>
+                    <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">SEJARAH</h1>
                     <div className="flex justify-center">
-                        <img src="./images/sejarah.jpeg" className='rounded-md md:w-full md:h-60 object-cover overflow-hidden shadow-md mb-4' />
+                        <img src="./images/sejarah.jpeg" className='rounded-md md:w-full object-cover overflow-hidden shadow-md mb-4' />
                     </div>
                     <div className="flex flex-col gap-3">
                     <p className='text-justify opacity-60 leading-relaxed'>Rumah Sakit Paru Sumatera Barat merupakan UPTD Dinas Kesehatan Provinsi Sumatera Barat, awalnya dulu adalah Balai Pengobatan Penyakit Paru-Paru (BP4) Lubuk Alung. Balai Pengobatan Penyakit Paru-Paru (BP4) Lubuk Alung, berubah status menjadi Rumah Sakit Paru Sumatera Barat sesuai dengan Peraturan Daerah Provinsi Sumatera Barat Nomor 11 Tahun 2017 tentang Penetapan Status Balai Pengobatan Penyakit Paru-Paru menjadi Rumah Sakit Paru Sumatera Barat.</p>

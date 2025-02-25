@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 
-const Igd = () => {
+const Farmasi = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
     const [activeDropdown, setActiveDropdown] = useState(null); // Track the active dropdown
 
@@ -24,7 +24,6 @@ const Igd = () => {
     const toggleDropdown = (dropdownName) => {
         setActiveDropdown((prevDropdown) => (prevDropdown === dropdownName ? null : dropdownName));
     };
-
     return (
         <>
             <Navbar
@@ -36,23 +35,28 @@ const Igd = () => {
 
             {/* Content Section */}
             <div className="container mx-auto md:px-20 px-10 py-16 mt-10">
-                <div className="text-center mb-12">
-                    <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">Instalasi Gawat Darurat</h1>
+                <div className="text-center">
+                    <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">Farmasi</h1>
                     <div className="flex justify-center">
-                        <img src="./images/igd.jpeg" className='rounded-md md:w-full md:h-full object-cover object-right-bottom overflow-hidden shadow-md mb-4' />
+                        <img src="./images/farmasi.jpeg" className='rounded-md md:w-full md:h-full object-cover object-bottom overflow-hidden shadow-md mb-4' />
                     </div>
-                    <div className="flex flex-col gap-3">
-                    <p className='text-justify opacity-60 leading-relaxed'>Instalasi Gawat Darurat berada pada sayap kanan gedung Rumah Sakit Paru Sumatera Barat. IGD Rumah Sakit Paru Sumatera Barat adalah pelayanan untuk mengatasi kegawat daruratan yang disebabkan oleh gangguan fungsi paru dan pelayanan gawat darurat lainnya, termasuk kasus kecelakaan. Dalam hal ini IGD berperan dalam memberikan pelayanan gawat darurat yang cepat dan tepat serta terjangkau bagi kebutuhan masyarakat.</p>
+                    <div className="flex flex-col">
+                        <h2 className="text-left text-lg font-medium opacity-70">Pelayanan farmasi di Rumah Sakit Paru Sumatera Barat memiliki beberapa keunggulan, seperti:</h2>
+                        <p className="mt-4 text-md text-gray-600 text-left font-medium ">1. Pelayanan Resep:
+                        </p>
+                        <p className='text-gray-600 text-left opacity-70 pl-4'>a. Obat non racik waktu tunggu maksimal 20 menit</p>
+                        <p className='text-gray-600 text-left opacity-70 pl-4'>b. Obat racik waktu tunggu maksimal 25 menit</p>
+                        <p className="mt-4 text-md text-gray-600 text-left font-medium ">2. Pelayanan obat tidak dipungut biaya (obat gratis)
+                        </p>
+                        <p className="mt-1 text-md text-gray-600 text-left font-medium ">3. Adanya pelayanan informasi obat dan konsultasi obat kepada pasien oleh Apoteker
+                        </p>
                     </div>
-
                 </div>
-
             </div>
-
             <Footer />
 
         </>
     )
 }
 
-export default Igd
+export default Farmasi;

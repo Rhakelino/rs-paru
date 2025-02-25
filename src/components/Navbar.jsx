@@ -41,7 +41,6 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
         {/* Desktop Navigation Links */}
         <div className={`hidden lg:flex space-x-6 `}>
           <Link to="/" className={`text-gray-700 text-sm hover:text-blue-500 font-medium ${isScrolled ? 'text-white' : ''}`}>Beranda</Link>
-
           {/* Profil Dropdown */}
           <div className="relative dropdown">
             <button
@@ -107,14 +106,13 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             {/* Penunjang Medis Dropdown Menu Items */}
             {activeDropdown === "penunjangMedis" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48">
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Laboratorium</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Radiologi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Farmasi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gizi dan Laundry</a>
+                <Link to="/labor" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Laboratorium</Link>
+                <Link to="/radio" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Radiologi</Link>
+                <Link to="/farmasi" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Farmasi</Link>
               </div>
             )}
           </div>
-          <a href="/" className={`text-gray-700 text-sm hover:text-blue-500 font-medium ${isScrolled ? 'text-white' : ''}`}>Layanan Unggulan</a>
+          <Link to="/unggulan" className={`text-gray-700 text-sm hover:text-blue-500 font-medium ${isScrolled ? 'text-white' : ''}`}>Layanan Unggulan</Link>
         </div>
         <div className="hidden lg:block">
           <a href="/get-started" className="bg-blue-500 text-white py-2 px-4 rounded-full hover:bg-blue-400 z-10">
@@ -188,15 +186,14 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
             </button>
             {activeDropdown === "penunjangMedis" && (
               <div className="absolute left-0 mt-2 bg-white border shadow-lg rounded-lg w-48 z-40">
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Laboratorium</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Radiologi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Farmasi</a>
-                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gizi dan Laundry</a>
+                <Link to="/labor" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Laboratorium</Link>
+                <Link to="/radio" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Radiologi</Link>
+                <Link to="/farmasi" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Farmasi</Link>
               </div>
             )}
           </div>
 
-          <a href="/" className="text-gray-700 text-sm hover:text-blue-500">Layanan Unggulan</a>
+          <Link to="/unggulan" className="text-gray-700 text-sm hover:text-blue-500">Layanan Unggulan</Link>
         </div>
       </div>
     </nav>

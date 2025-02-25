@@ -8,6 +8,10 @@ import Sejarah from './Pages/Sejarah';
 import Igd from './Pages/Igd';
 import Rawat from './Pages/Rawat';
 import Inap from './Pages/Inap';
+import Labor from './Pages/Labor';
+import Radiologi from './Pages/Radiologi';
+import Farmasi from './Pages/Farmasi';
+import Unggulan from './Pages/Unggulan';
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
         <Route path="/igd" element={<Igd />} />
         <Route path="/rawat" element={<Rawat />} />
         <Route path="/inap" element={<Inap />} />
+        <Route path="/labor" element={<Labor />} />
+        <Route path="/radio" element={<Radiologi />} />
+        <Route path="/farmasi" element={<Farmasi />} />
+        <Route path="/unggulan" element={<Unggulan />} />
       </Routes>
     </Router>
   );

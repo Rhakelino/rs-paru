@@ -41,6 +41,20 @@ const Home = () => {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet minus reprehenderit facere mollitia accusamus tempora...",
       time: "10 menit yang lalu",
+    },
+    {
+      image: "./images/news2.jpeg",
+      title: "rekrutmen pegawai non asn (kontrak) blud tahun 2025 rs paru",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet minus reprehenderit facere mollitia accusamus tempora...",
+      time: "10 menit yang lalu",
+    },
+    {
+      image: "./images/news1.jpeg",
+      title: "rekrutmen pegawai non asn (kontrak) blud tahun 2025 rs paru",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eveniet minus reprehenderit facere mollitia accusamus tempora...",
+      time: "10 menit yang lalu",
     }
   ];
 

@@ -37,9 +37,9 @@ const Rawat = () => {
             {/* Content Section */}
             <div className="container mx-auto md:px-20 px-10 py-16 mt-10">
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">Rawat Jalan</h1>
+                    <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">Rawat Jalan</h1>
                     <div className="flex justify-center">
-                        <img src="./images/jalan.jpeg" className='rounded-md md:w-full md:h-60 object-cover object-center overflow-hidden shadow-md mb-4' />
+                        <img src="./images/jalan.jpeg" className='rounded-md md:w-full md:h-full object-cover object-center overflow-hidden shadow-md mb-4' />
                     </div>
                     <div className="flex flex-col gap-3">
                         <p className='text-justify opacity-60 leading-relaxed'>Saat ini Rumah Sakit Paru Sumatera Barat memiliki 4 ruang Poliklinik Khusus Paru seperti, ruang Lindung Bulan (pasien baru), ruang Cinduo Mato (pasien dengan risiko infeksi), ruang Andam Suri (pasien lama/berulang), ruang Mande Rubiah (kontrol rutin pasien rawat jalan dari Puskesmas), dan Poliklinik DOTS (tempat melayani pasien suspect TB dan suspect TB MDR).</p>

@@ -50,7 +50,7 @@ const Tugas = () => {
                         <li>Penyelenggaraan pendidikan dan pelatihan</li>
                         <li>Penyelenggaraan pendidikan dan pelatihan</li>
                         <li>Penyelenggaraan administrasi umum dan keuangan.</li>
-                    </ul>.</p>
+                    </ul></p>
                 </div>
 
             </div>
