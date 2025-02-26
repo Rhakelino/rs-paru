@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 const Igd = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -16,6 +18,13 @@ const Igd = () => {
         document.addEventListener("click", handleClickOutside);
         return () => document.removeEventListener("click", handleClickOutside);
     }, []);
+
+    useEffect(() => {
+        AOS.init({
+          duration: 500,
+          once: true,
+        });
+      }, []);
 
     // Toggle mobile menu
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -41,14 +50,12 @@ const Igd = () => {
                     <div className="flex justify-center">
                         <img src="./images/igd.jpeg" className='rounded-md md:w-full md:h-full object-cover object-right-bottom overflow-hidden shadow-md mb-4' />
                     </div>
-                    <div className="flex flex-col gap-3">
-                    <p className='text-justify opacity-60 leading-relaxed'>Instalasi Gawat Darurat berada pada sayap kanan gedung Rumah Sakit Paru Sumatera Barat. IGD Rumah Sakit Paru Sumatera Barat adalah pelayanan untuk mengatasi kegawat daruratan yang disebabkan oleh gangguan fungsi paru dan pelayanan gawat darurat lainnya, termasuk kasus kecelakaan. Dalam hal ini IGD berperan dalam memberikan pelayanan gawat darurat yang cepat dan tepat serta terjangkau bagi kebutuhan masyarakat.</p>
+                    <div className="flex flex-col gap-3" data-aos="fade-right">
+                        <p className='text-justify opacity-60 leading-relaxed'>Instalasi Gawat Darurat berada pada sayap kanan gedung Rumah Sakit Paru Sumatera Barat. IGD Rumah Sakit Paru Sumatera Barat adalah pelayanan untuk mengatasi kegawat daruratan yang disebabkan oleh gangguan fungsi paru dan pelayanan gawat darurat lainnya, termasuk kasus kecelakaan. Dalam hal ini IGD berperan dalam memberikan pelayanan gawat darurat yang cepat dan tepat serta terjangkau bagi kebutuhan masyarakat.</p>
                     </div>
 
                 </div>
-
             </div>
-
             <Footer />
 
         </>

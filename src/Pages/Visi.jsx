@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 function Visi() {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -15,6 +17,14 @@ function Visi() {
         };
         document.addEventListener("click", handleClickOutside);
         return () => document.removeEventListener("click", handleClickOutside);
+    }, []);
+    
+    useEffect(() => {
+        AOS.init({
+            duration: 500,
+            once: true,
+        });
+        AOS.refresh(); // Menyegarkan AOS setelah data dimuat
     }, []);
 
     // Toggle mobile menu
@@ -35,12 +45,11 @@ function Visi() {
             />
 
             {/* Content Section */}
-            <div className="container mx-auto md:px-20 px-10 py-16 mt-14">
+            <div className="container mx-auto md:px-20 px-10 py-16 mt-14" data-aos="fade-right">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-bold text-gray-800">Visi Misi Rumah Sakit Paru Sumatera Barat</h1>
                     <p className="mt-4 text-lg text-gray-600">Dalam membangun Rumah Sakit Paru Provinsi Sumatra Barat yang lebih baik lagi, diperluakan visi dan misi. Visi dan Misi Rumah Sakit Paru Sumatera Barat yaitu :</p>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="relative">
                         <img src="./images/visi.jpg" alt="Health Services" />
@@ -54,12 +63,12 @@ function Visi() {
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="flex flex-col justify-center">
                         <h2 className="text-3xl font-semibold text-gray-800">MISI</h2>
-                        <p className="mt-4 text-lg text-gray-600"><ol className='list-decimal pl-5 text-opacity-80 leading-loose italic'>
+                        <ol className='mt-4 text-lg text-gray-600 list-decimal pl-5 text-opacity-80 leading-loose italic'>
                             <li>Memberikan Pelayanan Kesehatan Paru dan Pernafasan secara berkualitas, Profesional dan Paripurna.</li>
                             <li>Membentuk Jejaring Pelaksanaan Rujukan dan Kerjasama dengan Lembaga dan Institusi terkait, Khususnya dalam Penanganan Penyakit Paru dan Saluran Pernafasan.</li>
                             <li>Jejaring Pendidikan, Penelitian, Pelatihan, Pengembangan Ilmu dan Kualitas SDM di Bidang Kesehatan Paru dan Saluran Pernafasan.</li>
                             <li>Mengembangkan Teknologi Kesehatan khususnya dalam Penanganan Penyakit Paru dan Saluran Pernafasan.</li>
-                        </ol></p>
+                        </ol>
                     </div>
                     <div className="relative hidden justify-end md:flex">
                         <img src="./images/misi.jpg" alt="Chronic Disease Management" />
@@ -73,12 +82,12 @@ function Visi() {
                     <div className="flex flex-col justify-center">
                         <h2 className="text-3xl font-semibold text-gray-800">NILAI</h2>
                         <div className="flex flex-col justify-center">
-                            <p className="mt-4 text-lg text-gray-600"><ol className='list-decimal pl-5 text-opacity-80 leading-loose italic'>
+                            <ol className='list-decimal pl-5 text-opacity-80 leading-loose italic'>
                                 <li>I = Integritas</li>
                                 <li>M   = Melayani dengan Ikhlas</li>
                                 <li>A    = Amanah</li>
                                 <li>N    = Nyaman.</li>
-                            </ol></p>
+                            </ol>
                         </div>
                     </div>
                 </div>

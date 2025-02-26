@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import NewsCard from "../components/NewsCard";
 import Footer from "../components/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -16,6 +18,14 @@ const Home = () => {
     };
     document.addEventListener("click", handleClickOutside);
     return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: true,
+    });
+    AOS.refresh(); // Menyegarkan AOS setelah data dimuat
   }, []);
 
   // Toggle mobile menu
@@ -63,7 +73,7 @@ const Home = () => {
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center opacity-50" style={{ backgroundImage: 'url("./images/bg-hero.jpeg")' }}></div>
       <div className="absolute inset-0 flex justify-center items-center z-20 pt-48 sm:pt-24 lg:pt-32">
-        <div className="text-center font-medium px-4 sm:px-6 lg:px-8">
+        <div className="text-center font-medium px-4 sm:px-6 lg:px-8" data-aos="fade-up">
           <h1 className="text-3xl md:text-4xl font-bold">Rumah Sakit Paru Sumatera Barat</h1>
           <p className="mt-4 text-lg">Layanan 24 Jam, Siap Membantu Anda</p>
           <p className="mt-2 text-sm">Memberikan Pelayanan Kesehatan Paru dan Pernafasan secara berkualitas, Profesional dan Paripurna.</p>

@@ -1,8 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 
 const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: true,
+    });
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +29,7 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
   }, []);
 
   return (
-    <nav className={`fixed m-0 p-0 top-0 left-0 right-0 z-50 transition-all ${isScrolled ? 'bg-[#1D232A] shadow-sm' : 'bg-transparent'} `}>
+    <nav data-aos="fade-down" className={`fixed m-0 p-0 top-0 left-0 right-0 z-50 transition-all ${isScrolled ? 'bg-[#1D232A] shadow-sm' : 'bg-transparent'} `}>
       {/* Navbar Content */}
       <div className={`flex justify-between items-center p-4 relative z-20`}>
         {/* Logo Section */}

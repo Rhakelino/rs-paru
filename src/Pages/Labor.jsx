@@ -42,7 +42,7 @@ const Labor = () => {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">A. Hermatologi</h1>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">A. Hermatologi</h1>
                             <p className="mt-4 text-lg text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
                                 <li>Hemoglobin</li>
                                 <li>Hematokrit</li>
@@ -54,8 +54,8 @@ const Labor = () => {
                             </ul>.</p>
                         </div>
                         <div>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">B. Kimia Klinik</h1>
-                            <p className="mt-4 text-lg text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">B. Kimia Klinik</h1>
+                            <p className="mt-4 text-md text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
                                 <li>Glukosa</li>
                                 <li>Fungsi Ginjal :   ( Ureum & Kreatinin )</li>
                                 <li>Fungsi Hati  :  ( Sgot,Sgpt, Bilirubin )</li>
@@ -66,23 +66,23 @@ const Labor = () => {
                             </ul>.</p>
                         </div>
                         <div>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">C. Analisa Rutin Lengkap</h1>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">C. Analisa Rutin Lengkap</h1>
 
                         </div>
                         <div>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">D. Analisa Cairan Tubuh  (Pleura, LCS, Ascites)</h1>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">D. Analisa Cairan Tubuh  (Pleura, LCS, Ascites)</h1>
                         </div>
                         <div className='mt-4'>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">E. Mikrobiologi: Pemeriksaan M.Tb & MOTT</h1>
-                            <p className="mt-4 text-lg text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">E. Mikrobiologi: Pemeriksaan M.Tb & MOTT</h1>
+                            <p className="mt-4 text-md text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
                                 <li>BTA</li>
                                 <li>TCM </li>
                                 <li>Kultur: LJ ( Kultur Media Padat )</li>
                             </ul>.</p>
                         </div>
                         <div className='mt-4'>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">G. Imunologi / Serologi</h1>
-                            <p className="mt-4 text-lg text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">G. Imunologi / Serologi</h1>
+                            <p className="mt-4 text-md text-gray-600 text-left opacity-70"><ul className='list-decimal pl-9'>
                                 <li>TSH</li>
                                 <li>HBsAg</li>
                                 <li>HIV</li>
@@ -90,7 +90,7 @@ const Labor = () => {
                             </ul>.</p>
                         </div>
                         <div className='mt-4'>
-                            <h1 className="text-xl font-medium text-gray-800 text-left">F. Elektrolit (Na, K, Cl)</h1>
+                            <h1 className="text-lg font-medium text-gray-800 text-left">F. Elektrolit (Na, K, Cl)</h1>
                         </div>
                     </div>
                 </div>
