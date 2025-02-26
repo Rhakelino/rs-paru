@@ -9,8 +9,8 @@ const Navbar = ({ toggleMenu, isMenuOpen, toggleDropdown, activeDropdown }) => {
   useEffect(() => {
     AOS.init({
       duration: 500,
-      once: true,
-    });
+      once: false,
+    });   
   }, []);
 
   useEffect(() => {
