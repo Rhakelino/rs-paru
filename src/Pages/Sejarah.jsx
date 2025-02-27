@@ -3,6 +3,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
+import HeroBg from '../components/HeroBg';
 
 const Sejarah = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -46,9 +47,7 @@ const Sejarah = () => {
             <div className="container mx-auto md:px-20 px-10 py-16 mt-10">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">SEJARAH</h1>
-                    <div className="flex justify-center">
-                        <img src="./images/sejarah.jpeg" className='rounded-md md:w-full object-cover overflow-hidden shadow-md mb-4' />
-                    </div>
+                    <HeroBg img="./images/sejarah.jpeg" />  
                     <div className="flex flex-col gap-3" data-aos="fade-up">
                         <p className='text-justify opacity-60 leading-relaxed'>Rumah Sakit Paru Sumatera Barat merupakan UPTD Dinas Kesehatan Provinsi Sumatera Barat, awalnya dulu adalah Balai Pengobatan Penyakit Paru-Paru (BP4) Lubuk Alung. Balai Pengobatan Penyakit Paru-Paru (BP4) Lubuk Alung, berubah status menjadi Rumah Sakit Paru Sumatera Barat sesuai dengan Peraturan Daerah Provinsi Sumatera Barat Nomor 11 Tahun 2017 tentang Penetapan Status Balai Pengobatan Penyakit Paru-Paru menjadi Rumah Sakit Paru Sumatera Barat.</p>
                         <p className='text-justify opacity-60 leading-relaxed'>Berdirinya BP 4 Lubuk Alung diawali dari hasil rapat kerja pemberantasan penyakit tuberkulosis yang dilaksanakan di Kaliurang, Yogyakarta tahun 1952. Dimana pertemuan tersebut menghasilkan beberapa keputusan. Salah satu keputusan dari rapat tersebut adalah mendirikan Balai Pemberantasan Penyakit Tuberkulosis (BP 4) Pusat di tiap ibukota Provinsi dan mendirikan BP 4 cabang di tiap ibukota Kabupaten/Kotamadya.</p>

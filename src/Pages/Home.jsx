@@ -4,6 +4,7 @@ import NewsCard from "../components/NewsCard";
 import Footer from "../components/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
+import Galleri from "../components/Galleri";
 
 const Home = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -25,7 +26,6 @@ const Home = () => {
       duration: 500,
       once: true,
     });
-    AOS.refresh(); // Menyegarkan AOS setelah data dimuat
   }, []);
 
   // Toggle mobile menu
@@ -108,7 +108,7 @@ const Home = () => {
         </div>
       </div>
       {/* End Berita */}
-
+      <Galleri />
       {/* Footer */}
       <Footer />
       {/* End Footer */}

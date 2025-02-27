@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import HeroBg from '../components/HeroBg';
 
 const Labor = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -38,7 +39,8 @@ const Labor = () => {
                 <div className="text-center mb-12">
                     <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">Laboratorium</h1>
                     <div className="flex justify-center">
-                        <img src="./images/labor.jpg" className='rounded-md md:w-full md:h-full object-cover object-left overflow-hidden shadow-md mb-4' />
+                        <HeroBg img="./images/labor.jpg" />
+
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>

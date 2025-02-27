@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import HeroBg from '../components/HeroBg';
 
 const Rawat = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
@@ -39,7 +40,7 @@ const Rawat = () => {
                 <div className="text-center mb-12">
                     <h1 className="text-4xl text-left font-bold text-gray-800 mb-4">Rawat Jalan</h1>
                     <div className="flex justify-center">
-                        <img src="./images/jalan.jpeg" className='rounded-md md:w-full md:h-full object-cover object-center overflow-hidden shadow-md mb-4' />
+                        <HeroBg img="./images/jalan.jpeg" />
                     </div>
                     <div className="flex flex-col gap-3">
                         <p className='text-justify opacity-60 leading-relaxed'>Saat ini Rumah Sakit Paru Sumatera Barat memiliki 4 ruang Poliklinik Khusus Paru seperti, ruang Lindung Bulan (pasien baru), ruang Cinduo Mato (pasien dengan risiko infeksi), ruang Andam Suri (pasien lama/berulang), ruang Mande Rubiah (kontrol rutin pasien rawat jalan dari Puskesmas), dan Poliklinik DOTS (tempat melayani pasien suspect TB dan suspect TB MDR).</p>

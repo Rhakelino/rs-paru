@@ -24,7 +24,6 @@ function Visi() {
             duration: 500,
             once: true,
         });
-        AOS.refresh(); // Menyegarkan AOS setelah data dimuat
     }, []);
 
     // Toggle mobile menu
@@ -45,12 +44,12 @@ function Visi() {
             />
 
             {/* Content Section */}
-            <div className="container mx-auto md:px-20 px-10 py-16 mt-14" data-aos="fade-right">
-                <div className="text-center mb-12">
+            <div className="container mx-auto md:px-20 px-10 py-16 mt-14">
+                <div className="text-center mb-12" data-aos="fade-right">
                     <h1 className="text-4xl font-bold text-gray-800">Visi Misi Rumah Sakit Paru Sumatera Barat</h1>
                     <p className="mt-4 text-lg text-gray-600">Dalam membangun Rumah Sakit Paru Provinsi Sumatra Barat yang lebih baik lagi, diperluakan visi dan misi. Visi dan Misi Rumah Sakit Paru Sumatera Barat yaitu :</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-right">
                     <div className="relative">
                         <img src="./images/visi.jpg" alt="Health Services" />
                     </div>
@@ -60,7 +59,7 @@ function Visi() {
                         <p className="mt-4 text-lg text-gray-600 italic">“Menjadi Pusat Rujukan Penyakit Paru dan Saluran Pernafasan di Regional Sumatera Tengah Tahun 2025”</p>
                     </div>
                 </div>
-                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-left">
                     <div className="flex flex-col justify-center">
                         <h2 className="text-3xl font-semibold text-gray-800">MISI</h2>
                         <ol className='mt-4 text-lg text-gray-600 list-decimal pl-5 text-opacity-80 leading-loose italic'>
@@ -74,7 +73,7 @@ function Visi() {
                         <img src="./images/misi.jpg" alt="Chronic Disease Management" />
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-right">
                     <div className="relative">
                         <img src="./images/nilai.jpg" alt="Health Services" />
                     </div>
